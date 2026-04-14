@@ -1,7 +1,7 @@
 const { test } = require('@playwright/test');
 
 test('Find all PDF links on the page', async ({ page }) => {
-  const PAGE_URL = 'https://symmetrydigital-labs.com/SBP-2025/circulars-2025.html'; // replace if needed
+  const PAGE_URL = 'https://sbpv1.symmetrydigital-labs.com/our-operations/financial-market/daily-kibor-rates'; // replace if needed
 
   page.setDefaultNavigationTimeout(60000);
   await page.goto(PAGE_URL, { waitUntil: 'domcontentloaded' });
